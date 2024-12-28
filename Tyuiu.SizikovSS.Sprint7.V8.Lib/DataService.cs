@@ -205,8 +205,12 @@ namespace Tyuiu.SizikovSS.Sprint7.V8.Lib
                 needed = "Немедленно провести ТО";
             }
 
-            // Собрать новую строку
-            string updatedLine = $"{targetLine};{actprobeg};{needed}";
+            // Заменяем элементы массива parts значениями actprobeg и needed
+            parts[6] = actprobeg.;
+            parts[7] = needed;
+
+            // Собираем новую строку из частей
+            string updatedLine = string.Join(";", parts);
 
             // Чтение всех строк файла с использованием кодировки UTF-8
             string[] lines = File.ReadAllLines(filePath, Encoding.UTF8);

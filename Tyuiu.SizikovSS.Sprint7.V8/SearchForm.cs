@@ -51,7 +51,7 @@ namespace Tyuiu.SizikovSS.Sprint7.V8
                 }
 
                 // Добавить одну строку и заполнить ее данными
-                int rowIndex = dataGridViewCar_SSS.Rows.Add();
+                int rowIndex = dataGridViewCar_SSS.Rows.Add(Encoding.UTF8);
                 DataGridViewRow row = dataGridViewCar_SSS.Rows[rowIndex];
 
                 for (int i = 0; i < view.Length; i++)
